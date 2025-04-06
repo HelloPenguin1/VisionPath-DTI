@@ -94,6 +94,6 @@ export const careers: Career[] = [
         potential_roles: ['Security Architect', 'Compliance Manager', 'Security Consultant']
       }
     ]
-  }
+  },
   // ... (I'll continue with the rest of the careers in the next action to maintain readability)
 ];

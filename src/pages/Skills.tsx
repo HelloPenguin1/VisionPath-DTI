@@ -29,15 +29,65 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     name: 'Technical Skills',
-    skills: ['Programming', 'Database Management', 'System Design', 'Cloud Computing', 'DevOps'],
+    skills: [
+      'Programming',
+      'Database Management',
+      'Cloud Computing',
+      'Network Security',
+      'Technology', 
+      'Data Analysis'
+    ],
   },
   {
     name: 'Soft Skills',
-    skills: ['Communication', 'Leadership', 'Problem Solving', 'Teamwork', 'Time Management'],
+    skills: [
+      'Communication',
+      'Leadership',
+      'Problem Solving',
+      'Teamwork',
+      'Project Management',
+      'Empathy',
+      'Attention to Detail',
+      'Negotiation'
+    ],
   },
   {
-    name: 'Industry Knowledge',
-    skills: ['Agile Methodologies', 'Project Management', 'Business Analysis', 'Data Analytics', 'UI/UX Design'],
+    name: 'Creative Skills',
+    skills: [
+      'Creativity',
+      'UI Design',
+      'Branding'
+    ],
+  },
+  {
+    name: 'Analytical Skills',
+    skills: [
+      'Analytical Skills',
+      'Data Analysis',
+      'Research',
+      'Financial Modeling'
+    ],
+  },
+  {
+    name: 'Domain-Specific Practices',
+    skills: [
+      'Patient Care',
+      'Structural Analysis', 
+      'Marketing Strategy',
+      'Environmental Conservation',
+      'Teaching',
+      'Curriculum Design'
+    ],
+  },
+  {
+    name: 'Management and Methodologies',
+    skills: [
+      'Agile Methodologies',
+      'Project Management',
+      'Business Analysis',
+      'Budgeting',
+      'Strategic Planning'
+    ],
   },
 ];
 
@@ -145,12 +195,12 @@ function Skills() {
           <h2 className="text-xl font-semibold mb-4">Skill Assessment</h2>
           
           <div className="space-y-6">
-            <div className="flex space-x-4 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4">
               {skillCategories.map(category => (
                 <button
                   key={category.name}
                   onClick={() => setSelectedCategory(category.name)}
-                  className={`px-4 py-2 rounded ${
+                  className={`px-3 py-1.5 rounded text-sm sm:text-base sm:px-4 sm:py-2 ${
                     selectedCategory === category.name
                       ? 'bg-primary-600 text-white'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
