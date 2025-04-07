@@ -21,12 +21,12 @@ ChartJS.register(
   Legend
 );
 
-interface SkillCategory {
+export interface SkillCategory {
   name: string;
   skills: string[];
 }
 
-const skillCategories: SkillCategory[] = [
+export const skillCategories: SkillCategory[] = [
   {
     name: 'Technical Skills',
     skills: [
@@ -59,36 +59,7 @@ const skillCategories: SkillCategory[] = [
       'Branding'
     ],
   },
-  {
-    name: 'Analytical Skills',
-    skills: [
-      'Analytical Skills',
-      'Data Analysis',
-      'Research',
-      'Financial Modeling'
-    ],
-  },
-  {
-    name: 'Domain-Specific Practices',
-    skills: [
-      'Patient Care',
-      'Structural Analysis', 
-      'Marketing Strategy',
-      'Environmental Conservation',
-      'Teaching',
-      'Curriculum Design'
-    ],
-  },
-  {
-    name: 'Management and Methodologies',
-    skills: [
-      'Agile Methodologies',
-      'Project Management',
-      'Business Analysis',
-      'Budgeting',
-      'Strategic Planning'
-    ],
-  },
+  
 ];
 
 function Skills() {

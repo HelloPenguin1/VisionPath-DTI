@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../components/AuthContext';
 
-interface Career {
+export interface Career {
   id: string;
   title: string;
   description: string;
@@ -15,7 +15,7 @@ interface Career {
   industry: string;
 }
 
-const defaultCareers: Career[] = [
+export const defaultCareers: Career[] = [
   // Technology Field (13 careers)
   {
     id: 'software-dev',
